@@ -1,10 +1,7 @@
-**写在前头:本插件只适用 android studio和 Intellij IDEA 工具,eclipse 的少年无视我吧!!!**
-##这个跟 master最大的区别是使用 Public 来修饰成员变量,代替了传统的 Set 和 get 方法.##
-这是一个根据JSONObject格式的字符串,自动生成实体类参数.
-
+ 
+##这个跟 master最大的区别是使用 Public来修饰成员变量,代替了传统的 Set 和 get 方法.##
 
 版本1.1.1
-
 >1.1.1版本更新内容
  1.  修复了因为过滤//注释代码导致的出现的 Json 格式验证异常;
  * 支持解析 java 的关键字作为 key (支持字段:
@@ -18,7 +15,7 @@ this,instanceof,native,new,goto,const,volatile,return,finally)其余暂不支持
 
 
 
-  #Usage#
+ #Usage#
 安装方法:
 ~~~
      1.下载当前仓库下的GsonFormat_.jar ;
