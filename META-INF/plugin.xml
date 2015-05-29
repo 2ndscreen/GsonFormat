@@ -1,15 +1,13 @@
 <idea-plugin version="2">
-    <name>GsonFormat</name>
+    <name>GsonFormat_</name>
     <description><![CDATA[
 <html>quickly to convert a JSON string to an entity class ..<br>
 <a href="https://github.com/zzz40500/GsonFormat"> openSource</a>
-
       </html>
       ]]>
     </description>
-    <version>1.1.1</version>
+    <version>1.1.0</version>
     <vendor email="wyh405003836@126.com">zzz40500</vendor>
-
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
     <idea-version since-build="107.111"/>
 
@@ -25,7 +23,7 @@
     <actions>
     <!-- Add your actions here -->
       <action
-              id="MainAction" class="MainAction" text="GsonFormat"
+              id="MainAction" class="MainAction" text="GsonFormat_"
               >
 
           <add-to-group group-id="GenerateGroup" anchor="first"/>

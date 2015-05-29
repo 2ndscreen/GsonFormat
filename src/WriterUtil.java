@@ -106,8 +106,8 @@ public class WriterUtil extends WriteCommandAction.Simple {
         Set<String> set = json.keySet();
         List<String> list = new ArrayList<String>(set);
         List<String> fields = createField(json, list, mClass);
-        createSetMethod(json, fields, list, mClass);
-        createGetMethod(json, fields, list, mClass);
+//        createSetMethod(json, fields, list, mClass);
+//        createGetMethod(json, fields, list, mClass);
         JavaCodeStyleManager styleManager = JavaCodeStyleManager.getInstance(project);
         styleManager.optimizeImports(mFile);
         styleManager.shortenClassReferences(mClass);
@@ -141,7 +141,7 @@ public class WriterUtil extends WriteCommandAction.Simple {
             fields.add(key);
             String typeStr = typeByValue(mClass, key, type, true);
 
-            filedSb.append("private  ").append(typeStr).append(key).append(" ; ");
+            filedSb.append("public  ").append(typeStr).append(key).append(" ; ");
 
             String filedStr = null;
             if (i == 0) {
@@ -220,8 +220,8 @@ public class WriterUtil extends WriteCommandAction.Simple {
         Set<String> set = json.keySet();
         List<String> list = new ArrayList<String>(set);
         List<String> fields = createField(json, list, subClass);
-        createSetMethod(json, fields, list, subClass);
-        createGetMethod(json, fields, list, subClass);
+//        createSetMethod(json, fields, list, subClass);
+//        createGetMethod(json, fields, list, subClass);
         mClass.add(subClass);
 
     }
